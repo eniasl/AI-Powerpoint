@@ -1,0 +1,499 @@
+/*   fonts  */
+@font-face {
+  font-family: "poppins"
+  src:url("fonts/Poppins-Regular.otf");
+}
+
+@font-face {
+  font-family: "Mont"
+  src:url("Fonts/Mont-Heavy");
+}
+
+/* General */
+
+body{
+  background-color: #ffff;
+    font-family: "poppins";
+}
+
+
+
+p{
+  font-size: 20px;
+}
+
+
+/* color themes */
+
+.dark{
+  background-color: #0a1128;
+}
+
+.dark h1, h2, h3, h4, h5, h6, p, ul,a{
+   color: #fff;
+ }
+
+.dark a{
+    color: #fff;
+  }
+
+.dark .card{
+   background-color: #4361EE;
+ }
+
+
+.light h1,h2,h4,a,p{
+   color:  #0a1128;
+}
+
+
+.light a,p{
+   color:#0a1128;
+}
+
+.light h4,h1,h2{
+   color:#0a1128;
+}
+
+
+
+
+
+
+/* Button */
+
+.btn-light{
+  border-radius: 20px;
+  border-width: thin;
+  border-color: #fff;
+  color: #0a1128;
+  background-color:#fff;
+}
+.btn-light:hover{
+  border-width: thin;
+  border-color: #fff;
+  background-color: #4361EE;
+  color: #fff;
+}
+
+
+
+
+.btn-hollow{
+  background-color: #ffff;
+  color: #4361EE;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: #4361EE;
+}
+
+.btn-hollow:hover{
+  background-color: #4361EE;
+  color: #ffff;
+}
+
+.btn-fill{
+  background-color: #4361EE;
+  color: #ffff;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: #4361EE;
+  transition: 0.3s;
+}
+
+.btn-fill:hover{
+  background-color: #ffff;
+  color: #4361EE;
+
+}
+
+
+.btn-dark-hllw{
+  border-radius: 10px;
+  background-color: #0a1128;
+  border-width: thin;
+  border-color: #fff;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn-dark-hllw:hover{
+  background-color: #fff;
+  border-width: thin;
+  border-color: #0a1128;
+  color: #0a1128;
+}
+
+.btn-dark-fill{
+  background-color: #4361EE;
+  color: #ffff;
+  border-width: thin;
+  border-radius: 10px;
+  border-color: #4361EE;
+  transition: 0.3s;
+}
+
+.btn-dark-fill:hover{
+  background-color: #ffff;
+  color:  #0a1128;;
+  border-color: #ffff;
+
+}
+
+
+
+/* navbar */
+
+
+#main{
+    padding: 0% 0%;
+}
+
+#main .navbar{
+  padding: 0 10%;
+}
+
+#main ul{
+  margin-left: 55%;
+}
+
+#main li a{
+  font-size: 18px;
+  margin: 0 10px;
+  transition: 0.3sec;
+}
+
+#main li a:hover{
+  color: #4361EE;
+}
+
+#main img{
+  width: 10%;
+  margin: 30px;
+  margin-left: 60px;
+}
+
+#main .navbar-toggler{
+  color: #fff;
+  background-color: #4361EE;
+  text-align: center;
+}
+
+#main.navbar-toggler-icon i{
+  color: #fff;
+  background: #fff;
+  font-size: 100px;
+}
+
+/* pHero */
+
+#main p{
+  color: #ffff;
+}
+
+#main .hero{
+  margin-bottom: 0%;
+  padding: 13% 12%;
+}
+
+@media only screen and (max-width: 768px) {
+  #main .hero{
+    margin-bottom: 10%;
+    padding: 13% 12%;
+  }
+}
+
+
+
+#main h1{
+  font-weight: 999;
+}
+
+
+/* waves */
+#waves{
+  position: relative;
+}
+#waves .wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("C:\Users\faruk\PycharmProjects\presentations\static\wave.png");
+  background-size: 1000px 100px;
+}
+
+#waves .wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0px;
+}
+
+#waves .wave.wave2{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+#waves .wave.wave3{
+  animation: animate 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+#waves .wave.wave4{
+  animation: animate2 15s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+.wavedark-section{
+  position: relative;
+  margin-top: 300px;
+}
+.wavedark-section .wavedark{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url("C:\Users\faruk\PycharmProjects\presentations\static\wavedark.png");
+  background-size: 1000px 100px;
+}
+
+.wavedark-section .wavedark.wavedark1{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0px;
+}
+
+.wavedark-section .wavedark.wavedark2{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+.wavedark-section .wavedark.wavedark3{
+  animation: animate 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+.wavedark-section .wavedark.wavedark4{
+  animation: animate2 15s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes animate {
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2 {
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: -1000px;
+  }
+}
+
+
+/* steps */
+
+#steps{
+  margin-bottom: 15%;
+}
+#steps .row{
+  padding: 0% 10%;
+}
+
+#steps .text{
+  padding: 10%;
+}
+
+#steps h2{
+  color:  #0a1128;
+}
+
+/* pricing */
+
+#pricing{
+  padding:1% 0%;
+}
+
+#pricing .row{
+  padding: 5% 2%;
+  text-align: left;
+}
+
+#pricing .col{
+  padding: 0% 2%;
+}
+
+#pricing .card{
+  border-radius: 20px;
+  padding: 5%;
+}
+
+#pricing .card{
+  border-radius: 20px;
+  padding: 5%;
+}
+
+#pricing p,h2,h3,h4, ul{
+  margin-top: 20px;
+  color: #fff;
+}
+
+
+#pricing button{
+  margin-top: 20px;
+}
+
+#pricing small{
+  font-size: 25px;
+  color: #caf0f8;
+}
+
+#pricing .card li{
+   margin-top: 5px;
+}
+
+
+
+
+#support .container-lg{
+  padding: 2% 0%;
+  color: #ffff;
+}
+
+#support .container{
+  border:none;
+  border-color: inherit;
+}
+
+#support .row{
+    margin: 5%;
+
+}
+
+#support .col-sm-6{
+  margin: 0px;
+}
+
+#support h1{
+}
+
+#support p{
+  color: #fff;
+  font-size: 15px;
+}
+
+#support .chatbot{
+  width: 200px;
+  height: 50px;
+}
+
+#support .heder-text{
+    margin-bottom: 10%;
+}
+
+#footer a:hover{
+  color: #4361EE;
+}
+
+#footer img{
+  width: 15%;
+}
+
+#login form{
+  padding: 7% 40%;
+}
+
+
+#generation h2{
+    color:  #0a1128;
+}
+
+#generation h3{
+    color:  #0a1128;
+}
+
+#generation row col row col{
+  padding: 2%;
+}
+
+.holder{
+   text-align: center;
+   padding:5%;
+}
+
+
+#powerpoint{
+    background-color: red;
+}
+
+#powerpoint .container-md{
+  text-align: center;
+  background-color: red;
+  padding:5%;
+}
+
+#powerpoint .placeholder{
+  width: 800px;
+  height: 600px;
+  background-color: red;
+}
+
+.carousel-item img{
+   border-radius:20px;
+}
+
+.list-group{
+   justify-content: space-around;
+   flex-wrap:wrap;
+   gap:20px;
+
+}
+
+.tile{
+  border-radius:20px;
+}
+
+.tile input[type="checkbox"]{
+  -webkit-appearance:none;
+  height: 100%;
+  width: 100%;
+  background-color: red;
+  border-radius: 20px;
+  cursor:pointer;
+  outline:none;
+}
+
+.tile img{
+  width:60%;
+}
+
